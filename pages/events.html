@@ -10,21 +10,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
   </head>
   <body>
     <!-- Navbar Started -->
@@ -36,7 +40,9 @@
         <ul class="links">
           <li><a href="./homepage.html">Home</a></li>
           <li><a href="./team.html">Our Team</a></li>
-          <li><a href="#">Events</a></li>
+          <li>
+            <a href="#" style="color: orange; font-weight: bold">Events</a>
+          </li>
         </ul>
         <a href="./joinusform.html" class="action_btn">Join Us Now</a>
         <div class="toggle_btn">
@@ -46,132 +52,85 @@
       <div class="dropdown_menu">
         <li><a href="./homepage.html">Home</a></li>
         <li><a href="./team.html">Our Team</a></li>
-        <li><a href="#">Events</a></li>
+        <li><a href="#" style="color: orange; font-weight: bold">Events</a></li>
         <li><a href="./joinusform.html" class="action_btn">Join Us Now</a></li>
       </div>
     </header>
     <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDownMenu = document.querySelector(".dropdown_menu");
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropDownMenu = document.querySelector('.dropdown_menu');
       toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
         toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
       };
     </script>
     <!-- Navbar Ended -->
 
     <!-- Club Upcoming Events Start -->
-    <!-- <section> -->
-    <!-- <div class="heading"> -->
-    <!-- style="background: url(/assets/bg-img-events.jpg) no-repeat" -->
-    <!-- > -->
-    <!-- <h1>Events</h1> -->
-    <!-- </div> -->
-    <h1 class="sub-heading">Upcoming Events</h1>
-    <!-- <div class="box-container">
-        <div class="card">
-          <img class="image" src="../assets/Event.PNG" alt="event" />
-          <div class="container">
-            <h4>Event 1</h4>
-            <p>This was a good event.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="image" src="../assets/Event.PNG" alt="event" />
-          <div class="container">
-            <h4>Event 1</h4>
-            <p>This was a good event.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="image" src="../assets/Event.PNG" alt="event" />
-          <div class="container">
-            <h4>Event 1</h4>
-            <p>This was a good event.</p>
-          </div>
-        </div>
-        <div class="card">
-          <img class="image" src="../assets/Event.PNG" alt="event" />
-          <div class="container">
-            <h4>Event 1</h4>
-            <p>This was a good event.</p>
-          </div>
-        </div>
-      </div>
-    </section> -->
-
-    <div class="blog-slider">
-      <div class="blog-slider__wrp swiper-wrapper">
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759872/kuldar-kalvik-799168-unsplash.webp"
-              alt="" />
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
-            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-            <div class="blog-slider__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae voluptate repellendus magni illo ea animi?
+    <section id="upcoming-events">
+      <h1 class="sub-heading">Upcoming Events</h1>
+      <!-- <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item">
+            <div class="blog-slider__img">
+              <img src="../assets/CYBER AI..png" alt="" />
             </div>
-            <a href="#" class="blog-slider__button">READ MORE</a>
-          </div>
-        </div>
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/jason-leung-798979-unsplash.webp"
-              alt="" />
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
-            <div class="blog-slider__title">Lorem Ipsum Dolor2</div>
-            <div class="blog-slider__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae voluptate repellendus magni illo ea animi?
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae voluptate repellendus magni illo ea animi?
+              </div>
             </div>
-            <a href="#" class="blog-slider__button">READ MORE</a>
           </div>
         </div>
-
-        <div class="blog-slider__item swiper-slide">
-          <div class="blog-slider__img">
-            <img
-              src="https://res.cloudinary.com/muhammederdem/image/upload/q_60/v1535759871/alessandro-capuzzi-799180-unsplash.webp"
-              alt="" />
-          </div>
-          <div class="blog-slider__content">
-            <span class="blog-slider__code">26 December 2019</span>
-            <div class="blog-slider__title">Lorem Ipsum Dolor</div>
-            <div class="blog-slider__text">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Recusandae voluptate repellendus magni illo ea animi?
-            </div>
-            <a href="#" class="blog-slider__button">READ MORE</a>
-          </div>
-        </div>
-      </div>
-      <div class="blog-slider__pagination"></div>
-    </div>
+      </div> -->
+    </section>
     <!-- Club Upcoming Events End -->
 
     <!-- Club Latest Events Start -->
-    <section>
-      <h1>Latest News and Events</h1>
-      <div>
-        <div class="card">
-          <img src="../assets/Event.PNG" alt="event" />
-          <div class="container">
-            <h4>Event 1</h4>
-            <p>This was a good event.</p>
+    <section id="latest-events">
+      <h1 class="sub-heading">Latest News and Events</h1>
+      <!-- <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item">
+            <div class="blog-slider__img">
+              <img src="../assets/CYBER AI2.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae voluptate repellendus magni illo ea animi?
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <div class="blog-slider">
+        <div class="blog-slider__wrp swiper-wrapper">
+          <div class="blog-slider__item">
+            <div class="blog-slider__img">
+              <img src="../assets/CYBER AI2.png" alt="" />
+            </div>
+            <div class="blog-slider__content">
+              <span class="blog-slider__code">26 December 2019</span>
+              <div class="blog-slider__title">Lorem Ipsum Dolor</div>
+              <div class="blog-slider__text">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Recusandae voluptate repellendus magni illo ea animi?
+              </div>
+              <a href="#" class="blog-slider__button">READ MORE</a>
+            </div>
+          </div>
+        </div>
+      </div> -->
     </section>
     <!-- Club Latest Events End -->
 
@@ -195,5 +154,6 @@
       </div>
     </footer>
     <!-- Footer End -->
+    <script src="../scripts/events.js"></script>
   </body>
 </html>
