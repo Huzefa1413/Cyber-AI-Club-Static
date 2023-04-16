@@ -20,6 +20,7 @@ body {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  backdrop-filter: blur(3px);
 }
 
 /* ***************************************** */
@@ -94,8 +95,7 @@ header a:hover {
   top: 60px;
   width: 300px;
   height: 0;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(15px);
+  background-color: rgba(27, 22, 44, 0.9);
   border-radius: 10px;
   overflow: hidden;
   transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -139,7 +139,84 @@ header a:hover {
 
 /* ***************************************** */
 /* HomePage Start */
+section.heading {
+  padding: 1.5em 0;
+  /* background: url('../assets/bg-img-events.jpg'); */
+}
+section.heading h1 {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.heading p {
+  color: var(--white);
+  font-family: monospace;
+  font-size: 1.2rem;
+  text-align: center;
+  font-style: italic;
+}
 
+section.joinus {
+  padding: 3em 1em;
+  /* backdrop-filter: blur(15px); */
+}
+section.joinus h2 {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+section.joinus button {
+  margin-top: 20px;
+  width: 200px;
+  height: 50px;
+  background-color: orange;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+}
+section.joinus button a {
+  color: white;
+  font-family: 'Mulish';
+  font-size: 1rem;
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-decoration: none;
+}
+section.joinus button:hover {
+  scale: 1.05;
+  color: #fff;
+}
+section.joinus button:active {
+  scale: 0.95;
+}
+@media (max-width: 470px) {
+  section.joinus {
+    text-align: center;
+  }
+}
+section.vision {
+  padding: 1.5em;
+  /* background: url('../assets/bg-img-events.jpg'); */
+}
+section.vision h1 {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+section.vision p {
+  color: var(--white);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+}
 /* HomePage End */
 /* ***************************************** */
 
@@ -182,7 +259,7 @@ div.card div.container {
 /* ***************************************** */
 /* Events Start */
 .sub-heading {
-  padding: 1em 0;
+  padding: 1em;
   color: var(--white);
   font-family: 'Poppins', sans-serif;
   font-size: 2rem;
@@ -201,6 +278,7 @@ div.card div.container {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
+  font-family: 'Mulish', sans-serif;
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
@@ -274,6 +352,7 @@ div.card div.container {
 }
 .blog-slider__content {
   padding-right: 25px;
+  height: 100%;
 }
 @media screen and (max-width: 768px) {
   .blog-slider__content {
@@ -304,9 +383,12 @@ div.card div.container {
   margin-bottom: 20px;
 }
 .blog-slider__text {
+  display: block;
   color: #4e4a67;
   margin-bottom: 30px;
   line-height: 1.5em;
+  height: 70%;
+  overflow-y: auto;
 }
 
 /* Events End */
@@ -315,18 +397,26 @@ div.card div.container {
 /* ***************************************** */
 /* Footer Start */
 footer {
-  background-color: rgb(65, 54, 54);
+  background-color: rgba(27, 22, 44, 0.9);
+  font-family: 'Mulish';
   color: white;
+  padding: 20px;
 }
 footer div {
-  padding: 20px;
+  margin-bottom: 20px;
 }
 footer div ul {
   display: flex;
+  margin-top: 10px;
+  gap: 15px;
 }
 footer div ul li {
   list-style: none;
-  margin: 0px 15px;
+  cursor: pointer;
+}
+footer a {
+  text-decoration: none;
+  color: white;
 }
 /* Footer End */
 /* ***************************************** */
