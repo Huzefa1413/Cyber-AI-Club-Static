@@ -10,32 +10,65 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar Started -->
-    <nav>
-      <div class="logos">
-        <div><img src="../assets/logo.PNG" alt="logo" /></div>
-        <div><img src="../assets/ssuetlogo.PNG" alt="ssuetlogo" /></div>
-      </div>
-      <div class="links">
-        <ul>
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Cyber AI Club</a>
+        </div>
+        <ul class="links">
           <li><a href="./homepage.html">Home</a></li>
           <li><a href="./team.html">Our Team</a></li>
-          <li><a style="color: white" href="./events.html">Events</a></li>
-          <li><a href="./joinusform.html">Join Us Now</a></li>
+          <li><a href="#">Events</a></li>
         </ul>
+        <a href="./joinusform.html" class="action_btn">Join Us Now</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
-    </nav>
-    <section class="filler"></section>
+      <div class="dropdown_menu">
+        <li><a href="./homepage.html">Home</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+        <li><a href="#">Events</a></li>
+        <li><a href="./joinusform.html" class="action_btn">Join Us Now</a></li>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropDownMenu = document.querySelector('.dropdown_menu');
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
+        toggleBtnIcon.classList = isOpen
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
+      };
+    </script>
     <!-- Navbar Ended -->
 
     <!-- Club Upcoming Events Start -->
-    <section style="background-color: black">
-      <div
-        class="heading"
-        style="background: url(/assets/bg-img-events.jpg) no-repeat">
+    <section>
+      <div class="heading">
+        <!-- style="background: url(/assets/bg-img-events.jpg) no-repeat" -->
+        <!-- > -->
         <h1>Events</h1>
       </div>
       <h1 class="sub-heading">Upcoming Events</h1>
