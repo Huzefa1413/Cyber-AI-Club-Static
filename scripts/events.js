@@ -118,6 +118,6 @@ latestevents.forEach((element) => {
   latesteventsDiv.appendChild(divblogslider);
 });
 ScrollReveal().reveal('.blog-slider', {
-  delay: 800,
+  delay: 500,
   origin: 'left',
 });
