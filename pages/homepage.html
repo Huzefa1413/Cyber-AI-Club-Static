@@ -68,16 +68,6 @@
       <h1>Welcome to Cyber AI Club</h1>
       <p>Empowering Minds, Securing Futures</p>
     </section>
-    <script>
-      ScrollReveal({
-        reset: true,
-        distance: '60px',
-        duration: 2500,
-        delay: 400,
-      });
-      ScrollReveal().reveal('.heading h1', { delay: 500, origin: 'top' });
-      ScrollReveal().reveal('.heading p', { delay: 500, origin: 'bottom' });
-    </script>
     <!-- Club Heading End -->
 
     <!-- Club Upcoming Events Start -->
@@ -104,7 +94,7 @@
     </section>
     <!-- Club Vision End -->
     <!-- Club Latest Events Start -->
-    <section id="latest-events">
+    <section id="latest-events" class="latesteventhome">
       <h1 class="sub-heading">Latest News and Events</h1>
     </section>
     <!-- Club Latest Events End -->
@@ -138,6 +128,26 @@
       </div>
     </footer>
     <!-- Footer End -->
+    <script>
+      ScrollReveal({
+        reset: true,
+        distance: '60px',
+        duration: 2500,
+        delay: 400,
+      });
+      ScrollReveal().reveal('.heading h1, .joinus h2', {
+        delay: 500,
+        origin: 'top',
+      });
+      ScrollReveal().reveal('.heading p, .joinus button', {
+        delay: 600,
+        origin: 'bottom',
+      });
+      ScrollReveal().reveal('.vision h1, .vision p', {
+        delay: 600,
+        origin: 'left',
+      });
+    </script>
     <script src="../scripts/events.js"></script>
   </body>
 </html>
