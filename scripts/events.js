@@ -29,6 +29,7 @@ latestevents = [
 ];
 
 var upcomingeventsDiv = document.getElementById('upcoming-events');
+// if (upcomingevents.length > 0) {
 upcomingevents.forEach((element) => {
   var divblogslider = document.createElement('div');
   divblogslider.setAttribute('class', 'blog-slider');
@@ -69,6 +70,11 @@ upcomingevents.forEach((element) => {
   divblogslider.appendChild(divblogsliderwrp);
   upcomingeventsDiv.appendChild(divblogslider);
 });
+// }
+// else {
+//   var subheading = upcomingeventsDiv.childNodes[3];
+//   subheading.style.display = 'block';
+// }
 
 var latesteventsDiv = document.getElementById('latest-events');
 latestevents.forEach((element) => {

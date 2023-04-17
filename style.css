@@ -310,6 +310,15 @@ div.card div.container {
   text-transform: uppercase;
   text-align: center;
 }
+/* .sub-heading2 {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  display: none;
+  transition: all 2s ease;
+} */
 
 .blog-slider {
   width: 95%;
