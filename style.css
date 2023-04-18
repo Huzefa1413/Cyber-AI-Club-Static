@@ -266,37 +266,74 @@ section.vision p {
 
 /* ***************************************** */
 /* Team Start */
-#mediaheads {
-  /* background-color: blue; */
-  margin: 10px;
+section.teamheading {
+  width: 100%;
+  /* background-color: rgba(255, 255, 255, 0.4); */
+}
+.teamsubheading {
+  width: 100%;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.container {
+  margin: 25px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
 }
-#members {
-  margin: 10px;
+.container .card {
+  position: relative;
+  max-width: 300px;
+  height: 215px;
+  margin: 30px 10px;
+  padding: 20px 15px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 20px;
+  flex-direction: column;
+  transition: 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.5);
 }
-div.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  transition: 0.3s;
-  width: fit-content;
-  padding: 5px;
-  border-radius: 5px;
-}
-div.card img {
-  border-radius: 5px 5px 0 0;
-}
-div.card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+.container .card:hover {
+  height: 320px;
   cursor: pointer;
 }
-div.card div.container {
-  padding: 2px 16px;
+.container .card .imgBx {
+  position: relative;
+  width: 260px;
+  height: 260px;
+  top: -60px;
+  z-index: 1;
+  text-align: center;
 }
+.container .card .imgBx img {
+  max-width: 100%;
+  border-radius: 4px;
+}
+.container .card .content {
+  position: relative;
+  margin-top: -140px;
+  padding: 10px 15px;
+  text-align: center;
+  color: white;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+  font-family: 'Mulish';
+}
+.container .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  margin-top: -40px;
+  transition-delay: 0.3s;
+}
+
 /* Team End */
 /* ***************************************** */
 
@@ -310,15 +347,13 @@ div.card div.container {
   text-transform: uppercase;
   text-align: center;
 }
-/* .sub-heading2 {
+.sub-heading2 {
   color: var(--white);
   font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
-  display: none;
-  transition: all 2s ease;
-} */
+}
 
 .blog-slider {
   width: 95%;
