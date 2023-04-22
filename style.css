@@ -359,7 +359,9 @@ section.teamheading {
   position: relative;
   max-width: 800px;
   margin: 20px auto;
-  background: #fff;
+  /* background: #fff; */
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--white);
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
   padding: 25px;
   border-radius: 25px;
@@ -458,7 +460,7 @@ section.teamheading {
   transition: all 0.4s;
 }
 .blog-slider__code {
-  color: #7b7992;
+  /* color: #7b7992; */
   margin-bottom: 15px;
   display: block;
   font-weight: 500;
@@ -466,12 +468,12 @@ section.teamheading {
 .blog-slider__title {
   font-size: 24px;
   font-weight: 700;
-  color: #0d0925;
+  /* color: #0d0925; */
   margin-bottom: 20px;
 }
 .blog-slider__text {
   display: block;
-  color: #4e4a67;
+  /* color: #4e4a67; */
   margin-bottom: 30px;
   line-height: 1.5em;
   height: 70%;
