@@ -268,7 +268,6 @@ section.vision p {
 /* Team Start */
 section.teamheading {
   width: 100%;
-  /* background-color: rgba(255, 255, 255, 0.4); */
 }
 .teamsubheading {
   width: 100%;
@@ -301,7 +300,7 @@ section.teamheading {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .container .card:hover {
-  height: 320px;
+  height: 350px;
   cursor: pointer;
 }
 .container .card .imgBx {
