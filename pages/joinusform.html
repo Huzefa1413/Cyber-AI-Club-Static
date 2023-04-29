@@ -64,7 +64,55 @@
         <main class="form-main">
           <form>
             <div class="form-item box-item">
-              <input type="text" name="name" placeholder="Name" data-required />
+              <input
+                type="text"
+                name="name"
+                placeholder="First Name"
+                data-required />
+              <small class="errorReq"
+                ><i class="fa fa-asterisk" aria-hidden="true"></i> required
+                field</small
+              >
+            </div>
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="name"
+                placeholder="Last Name"
+                data-required />
+              <small class="errorReq"
+                ><i class="fa fa-asterisk" aria-hidden="true"></i> required
+                field</small
+              >
+            </div>
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="batch"
+                placeholder="Batch"
+                data-required />
+              <small class="errorReq"
+                ><i class="fa fa-asterisk" aria-hidden="true"></i> required
+                field</small
+              >
+            </div>
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="rollnumber"
+                placeholder="Roll Number"
+                data-required />
+              <small class="errorReq"
+                ><i class="fa fa-asterisk" aria-hidden="true"></i> required
+                field</small
+              >
+            </div>
+            <div class="form-item box-item">
+              <input
+                type="text"
+                name="department"
+                placeholder="Department"
+                data-required />
               <small class="errorReq"
                 ><i class="fa fa-asterisk" aria-hidden="true"></i> required
                 field</small
@@ -85,109 +133,6 @@
                 ><i class="fa fa-asterisk" aria-hidden="true"></i> email is not
                 valid</small
               >
-            </div>
-            <div class="form-item box-item">
-              <div class="form-item-triple">
-                <div class="radio-label">
-                  <label class="label">Gender</label>
-                </div>
-                <div class="form-item">
-                  <input
-                    id="Male"
-                    type="radio"
-                    name="gender"
-                    value="Male"
-                    data-once />
-                  <label for="Male">Male</label>
-                </div>
-                <div class="form-item">
-                  <input
-                    id="Female"
-                    type="radio"
-                    name="gender"
-                    value="Female"
-                    data-once />
-                  <label for="Female">Female</label>
-                </div>
-              </div>
-              <small class="errorOnce"
-                ><i class="fa fa-asterisk" aria-hidden="true"></i> choose at
-                least one</small
-              >
-            </div>
-            <div class="form-item box-item">
-              <div class="form-item-triple">
-                <div class="radio-label">
-                  <label class="label">Type</label>
-                </div>
-                <div class="form-item">
-                  <input
-                    id="sponsored"
-                    type="radio"
-                    name="gender2"
-                    value="sponsored"
-                    data-once />
-                  <label for="sponsored">sponsored</label>
-                </div>
-                <div class="form-item">
-                  <input
-                    id="paid"
-                    type="radio"
-                    name="gender2"
-                    value="paid"
-                    data-once />
-                  <label for="paid">paid</label>
-                </div>
-              </div>
-              <small class="errorOnce"
-                ><i class="fa fa-asterisk" aria-hidden="true"></i> choose at
-                least one</small
-              >
-            </div>
-            <div class="form-item box-item">
-              <input
-                type="text"
-                name="address"
-                placeholder="Address"
-                data-required />
-              <small class="errorReq"
-                ><i class="fa fa-asterisk" aria-hidden="true"></i> required
-                field</small
-              >
-            </div>
-            <div class="form-item-double box-item">
-              <div class="form-item">
-                <input
-                  type="text"
-                  name="strNumber"
-                  placeholder="Str Number"
-                  data-required
-                  data-number />
-                <small class="errorReq"
-                  ><i class="fa fa-asterisk" aria-hidden="true"></i> required
-                  field</small
-                >
-                <small class="errorNum"
-                  ><i class="fa fa-asterisk" aria-hidden="true"></i> must be a
-                  number</small
-                >
-              </div>
-              <div class="form-item">
-                <input
-                  type="text"
-                  name="zCode"
-                  placeholder="Zip Code"
-                  data-required
-                  data-number />
-                <small class="errorReq"
-                  ><i class="fa fa-asterisk" aria-hidden="true"></i> required
-                  field</small
-                >
-                <small class="errorNum"
-                  ><i class="fa fa-asterisk" aria-hidden="true"></i> must be a
-                  number</small
-                >
-              </div>
             </div>
             <div class="form-item box-item">
               <input
@@ -215,9 +160,7 @@
             </div>
           </form>
         </main>
-        <footer class="form-footer">
-          <p>Already have an account? <a href="#">Login here</a></p>
-        </footer>
+
         <i class="wave"></i>
       </section>
     </div>
