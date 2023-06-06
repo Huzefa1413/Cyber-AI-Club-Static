@@ -594,7 +594,8 @@ small {
 
 .form-item input[type="text"],
 input[type="number"],
-input[type="email"] {
+input[type="email"],
+input[type="password"] {
   display: block;
   color: #e2e3e8;
   font-size: 16px;
@@ -616,9 +617,9 @@ input[type="email"] {
 .form-item {
   flex: 1 1 auto;
 }
-.form-item:nth-child(1) {
+/* .form-item:nth-child(1) {
   padding-right: 16px;
-}
+} */
 .form-item-triple {
   display: flex;
   align-items: center;
@@ -701,7 +702,10 @@ input[type="radio"] {
   animation: shift 20s infinite linear;
   z-index: 0;
 }
-
+/* login page */
+.login-page {
+  margin: 5rem 0;
+}
 @keyframes shift {
   from {
     transform: rotate(360deg);
