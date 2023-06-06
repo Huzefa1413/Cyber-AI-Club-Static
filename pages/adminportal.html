@@ -11,12 +11,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navbar Started -->
@@ -26,30 +28,38 @@
           <a href="#">Cyber AI Club</a>
         </div>
         <ul class="links">
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Ads</a></li>
-          <li><a href="#">Events</a></li>
+          <li>
+            <a href="#" style="color: orange; font-weight: bold"
+              >Update Events</a
+            >
+          </li>
+          <li><a href="./team.html">Update Team</a></li>
+          <li><a href="./events.html">Update Ads</a></li>
         </ul>
-      </div>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
+        <a href="./joinusform.html" class="action_btn">Log Out</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
       </div>
       <div class="dropdown_menu">
-        <li><a href="#">Team</a></li>
-        <li><a href="#">Ads</a></li>
-        <li><a href="#">Events</a></li>
+        <li>
+          <a href="#" style="color: orange; font-weight: bold">Update Events</a>
+        </li>
+        <li><a href="./team.html">Update Team</a></li>
+        <li><a href="./events.html">Update Ads</a></li>
+        <li><a href="./joinusform.html" class="action_btn">Log Out</a></li>
       </div>
     </header>
     <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDownMenu = document.querySelector(".dropdown_menu");
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropDownMenu = document.querySelector('.dropdown_menu');
       toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
         toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
       };
     </script>
     <!-- Navbar Ended -->
