@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navbar Started -->
+    <header>
+      <div class="navbar">
+        <div class="logo">
+          <a href="#">Cyber AI Club</a>
+        </div>
+        <ul class="links">
+          <li><a href="./homepage.html">Home</a></li>
+          <li><a href="./team.html">Our Team</a></li>
+          <li><a href="./events.html">Events</a></li>
+        </ul>
+        <a href="#" class="action_btn">Join Us Now</a>
+        <div class="toggle_btn">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </div>
+      <div class="dropdown_menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="./team.html">Our Team</a></li>
+        <li><a href="./events.html">Events</a></li>
+        <li><a href="./joinusform.html" class="action_btn">Join Us Now</a></li>
+      </div>
+    </header>
+    <script>
+      const toggleBtn = document.querySelector(".toggle_btn");
+      const toggleBtnIcon = document.querySelector(".toggle_btn i");
+      const dropDownMenu = document.querySelector(".dropdown_menu");
+      toggleBtn.onclick = function () {
+        dropDownMenu.classList.toggle("open");
+        const isOpen = dropDownMenu.classList.contains("open");
+        toggleBtnIcon.classList = isOpen
+          ? "fa-solid fa-xmark"
+          : "fa-solid fa-bars";
+      };
+    </script>
+    <!-- Navbar Ended -->
+    <section class="login-page">
+      <div class="form-row">
+        <section class="form-section">
+          <header class="form-header">
+            <h3>Admin Panel</h3>
+            <h4>Please fill your credentials</h4>
+          </header>
+          <main class="form-main">
+            <form>
+              <div class="form-item box-item">
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email"
+                  data-email
+                  data-required />
+                <small class="errorReq"
+                  ><i class="fa fa-asterisk" aria-hidden="true"></i> required
+                  field</small
+                >
+                <small class="errorEmail"
+                  ><i class="fa fa-asterisk" aria-hidden="true"></i> email is
+                  not valid</small
+                >
+              </div>
+              <div class="form-item box-item">
+                <input type="password" name="" placeholder="Password" />
+              </div>
+              <div class="form-item">
+                <span id="submit" class="submit">Login</span>
+              </div>
+            </form>
+          </main>
+
+          <i class="wave"></i>
+        </section>
+      </div>
+    </section>
+    <!-- Footer Start -->
+    <footer>
+      <div>
+        <h3>About Us</h3>
+        <p>
+          Cyber & AI Club functions to empower students with technological
+          proficiency and leverage their potential in the field of Cyber & Ai,
+          ultimately fostering innovation & progress.
+        </p>
+      </div>
+      <div>
+        <h3>Connect with Us</h3>
+        <ul>
+          <li>
+            <a
+              href="https://www.facebook.com/profile.php?id=100091347931622"
+              target="_blank"
+              ><i class="fa-brands fa-facebook fa-2xl"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/cyber_ai_ssuet/" target="_blank"
+              ><i class="fa-brands fa-instagram fa-2xl"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <!-- Footer End -->
+    <script src="joinusnow.js"></script>
+  </body>
+</html>
