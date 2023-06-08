@@ -780,3 +780,52 @@ input[type='radio'] {
     transform: rotate(360deg);
   }
 }
+
+/* ***************************************** */
+/* Admin Edit Ads Page Start */
+div.admineditads {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+div.admineditads h1 {
+  padding: 1em;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+table.admineditads {
+  /* border: 1px solid white; */
+  padding: 20px;
+  font-size: 20px;
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+table.admineditads td {
+  padding: 10px;
+  border-bottom: 3px solid white;
+}
+table.admineditads img {
+  width: 60px;
+}
+table.admineditads button {
+  background-color: orange;
+  color: white;
+  padding: 0.5rem 1.4rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}
+/* Admin Edit Ads Page End */
+/* ***************************************** */
