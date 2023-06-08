@@ -11,15 +11,18 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
       integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
       crossorigin="anonymous"
-      referrerpolicy="no-referrer" />
+      referrerpolicy="no-referrer"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css" />
+      href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.5/css/swiper.min.css"
+    />
     <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
@@ -47,24 +50,74 @@
       </div>
     </header>
     <script>
-      const toggleBtn = document.querySelector(".toggle_btn");
-      const toggleBtnIcon = document.querySelector(".toggle_btn i");
-      const dropDownMenu = document.querySelector(".dropdown_menu");
+      const toggleBtn = document.querySelector('.toggle_btn');
+      const toggleBtnIcon = document.querySelector('.toggle_btn i');
+      const dropDownMenu = document.querySelector('.dropdown_menu');
       toggleBtn.onclick = function () {
-        dropDownMenu.classList.toggle("open");
-        const isOpen = dropDownMenu.classList.contains("open");
+        dropDownMenu.classList.toggle('open');
+        const isOpen = dropDownMenu.classList.contains('open');
         toggleBtnIcon.classList = isOpen
-          ? "fa-solid fa-xmark"
-          : "fa-solid fa-bars";
+          ? 'fa-solid fa-xmark'
+          : 'fa-solid fa-bars';
       };
     </script>
     <!-- Navbar Ended -->
 
     <!-- Club Heading Start -->
-    <section class="heading">
+    <!-- <section class="heading">
       <h1>Welcome to Cyber AI Club</h1>
       <p>Empowering Minds, Securing Futures</p>
+    </section> -->
+    <section class="heading">
+      <div class="heading-content">
+        <h1>Welcome to Cyber AI Club</h1>
+        <p>Empowering Minds, Securing Futures</p>
+      </div>
+      <div class="carousel-container">
+        <div class="carousel">
+          <div class="carousel-slide active">
+            <img src="../assets/ads1.jpg" alt="Image 1" />
+          </div>
+          <div class="carousel-slide">
+            <img src="../assets/ads2.jpeg" alt="Image 2" />
+          </div>
+          <div class="carousel-slide">
+            <img src="../assets/ads3.jpg" alt="Image 3" />
+          </div>
+        </div>
+      </div>
     </section>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const carousel = document.querySelector('.carousel');
+        const slides = carousel.getElementsByClassName('carousel-slide');
+        let currentSlide = 0;
+
+        function showSlide(slideIndex) {
+          if (slideIndex >= slides.length) {
+            slideIndex = 0;
+          } else if (slideIndex < 0) {
+            slideIndex = slides.length - 1;
+          }
+
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].classList.remove('active');
+          }
+          slides[slideIndex].classList.add('active');
+        }
+
+        function autoPlay() {
+          showSlide(currentSlide);
+          currentSlide++;
+          if (currentSlide >= slides.length) {
+            currentSlide = 0;
+          }
+        }
+
+        setInterval(autoPlay, 3000); // Change slide every 5 seconds
+      });
+    </script>
+
     <!-- Club Heading End -->
 
     <!-- Club Upcoming Events Start -->
@@ -128,25 +181,25 @@
     <script>
       ScrollReveal({
         reset: true,
-        distance: "50px",
+        distance: '50px',
         duration: 2500,
         delay: 400,
       });
-      ScrollReveal().reveal(".heading h1, .joinus h2", {
+      ScrollReveal().reveal('.heading h1, .joinus h2', {
         delay: 200,
-        origin: "top",
+        origin: 'top',
       });
-      ScrollReveal().reveal(".heading p, .joinus button", {
+      ScrollReveal().reveal('.heading p, .joinus button', {
         delay: 300,
-        origin: "bottom",
+        origin: 'bottom',
       });
-      ScrollReveal().reveal(".vision h1, .vision p", {
+      ScrollReveal().reveal('.vision h1, .vision p', {
         delay: 400,
-        origin: "left",
+        origin: 'left',
       });
-      ScrollReveal().reveal(".sub-heading", {
+      ScrollReveal().reveal('.sub-heading', {
         delay: 200,
-        origin: "top",
+        origin: 'top',
       });
     </script>
     <script src="../scripts/events.js"></script>

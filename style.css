@@ -16,7 +16,7 @@
 }
 body {
   /* background-color: blue; */
-  background-image: url("./assets/pexels-tara-winstead-8386440.jpg");
+  background-image: url('./assets/pexels-tara-winstead-8386440.jpg');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -29,7 +29,7 @@ body {
 header {
   position: relative;
   padding: 0 2rem;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 div.navbar {
   width: 100%;
@@ -139,7 +139,7 @@ header a:hover {
 
 /* ***************************************** */
 /* HomePage Start */
-section.heading {
+/* section.heading {
   background-color: rgba(255, 255, 255, 0.2);
   height: calc(100vh - 60px);
   display: flex;
@@ -148,8 +148,9 @@ section.heading {
   flex-direction: column;
 }
 section.heading h1 {
+  margin-top: 30px;
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 3rem;
   text-transform: uppercase;
   text-align: center;
@@ -160,7 +161,74 @@ section.heading p {
   font-size: 1.5rem;
   font-style: italic;
   text-align: center;
+  margin-bottom: 30px;
 }
+
+@media (max-width: 375px) {
+  section.heading h1 {
+    font-size: 2rem;
+  }
+  section.heading p {
+    font-size: 1.2rem;
+  }
+} */
+section.heading {
+  background-color: rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 30px 0; /* Add padding at the top and bottom */
+  height: calc(100vh - 60px);
+}
+
+.heading-content {
+  text-align: center;
+  margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+.heading h1 {
+  color: var(--white);
+  font-family: 'Poppins', sans-serif;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin: 0; /* Remove default margin */
+}
+
+.heading p {
+  color: var(--white);
+  font-family: monospace;
+  font-size: 1.5rem;
+  font-style: italic;
+  margin: 0; /* Remove default margin */
+}
+
+.carousel-container {
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 30px; /* Add margin at the bottom */
+}
+
+.carousel {
+  display: flex;
+  justify-content: center;
+  height: 80%;
+  padding: 0px 20px;
+}
+
+.carousel-slide {
+  display: none;
+}
+
+.carousel-slide.active {
+  display: block;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+}
+
 @media (max-width: 375px) {
   section.heading h1 {
     font-size: 2rem;
@@ -169,6 +237,7 @@ section.heading p {
     font-size: 1.2rem;
   }
 }
+
 section.joinus {
   background-color: rgba(255, 255, 255, 0.2);
   height: 100vh;
@@ -182,7 +251,7 @@ section.joinus {
 }
 section.joinus h2 {
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
 }
@@ -200,7 +269,7 @@ section.joinus button {
 }
 section.joinus button a {
   color: white;
-  font-family: "Mulish";
+  font-family: 'Mulish';
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: bold;
@@ -235,14 +304,14 @@ section.vision {
 }
 section.vision h1 {
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 section.vision p {
   color: var(--white);
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.2rem;
   text-align: center;
 }
@@ -272,7 +341,7 @@ section.teamheading {
 .teamsubheading {
   width: 100%;
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.5rem;
   text-transform: uppercase;
   text-align: center;
@@ -324,7 +393,7 @@ section.teamheading {
   visibility: hidden;
   opacity: 0;
   transition: 0.3s ease-in-out;
-  font-family: "Mulish";
+  font-family: 'Mulish';
 }
 .container .card:hover .content {
   visibility: visible;
@@ -341,14 +410,14 @@ section.teamheading {
 .sub-heading {
   padding: 1em;
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
 }
 .sub-heading2 {
   color: var(--white);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.3rem;
   text-transform: uppercase;
   text-align: center;
@@ -367,7 +436,7 @@ section.teamheading {
   border-radius: 25px;
   height: 400px;
   transition: all 0.3s;
-  font-family: "Mulish", sans-serif;
+  font-family: 'Mulish', sans-serif;
 }
 @media screen and (max-width: 992px) {
   .blog-slider {
@@ -406,7 +475,7 @@ section.teamheading {
   overflow: hidden;
 }
 .blog-slider__img:after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -487,7 +556,7 @@ section.teamheading {
 /* Footer Start */
 footer {
   background-color: rgba(27, 22, 44, 0.9);
-  font-family: "Mulish";
+  font-family: 'Mulish';
   color: white;
   padding: 20px;
   position: relative;
@@ -511,7 +580,7 @@ footer a {
 /* Footer End */
 /* ***************************************** */
 /* join us now start */
-@import url("https://fonts.googleapis.com/css?family=PT+Sans:400,700");
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700');
 .form-row {
   display: flex;
   align-items: center;
@@ -569,7 +638,7 @@ footer a {
   }
 }
 .form-main {
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   line-height: 1.428571429;
   font-weight: 400;
@@ -579,7 +648,7 @@ form {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  font-family: "PT Sans", sans-serif;
+  font-family: 'PT Sans', sans-serif;
 }
 .label {
   color: rgba(226, 227, 232, 0.75);
@@ -592,10 +661,10 @@ small {
   margin-top: 2px;
 }
 
-.form-item input[type="text"],
-input[type="number"],
-input[type="email"],
-input[type="password"] {
+.form-item input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='password'] {
   display: block;
   color: #e2e3e8;
   font-size: 16px;
@@ -639,7 +708,7 @@ label {
   margin: 0;
 }
 label,
-input[type="radio"] {
+input[type='radio'] {
   display: inline-block;
   vertical-align: middle;
   margin: 0 4px;
